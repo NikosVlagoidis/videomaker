@@ -10,7 +10,7 @@ imagefile = 'No imageFile'
 outputfile = 'output.avi'
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "ha:i:o:", ["afile=", "ifile" "ofile="])
+    opts, args = getopt.getopt(sys.argv[1:], "ha:i:o:", ["audiofile=", "imagefile=" "ouputfile="])
 except getopt.GetoptError:
     print ('app.py -a <audiofile> -i <imagefile> -o <outputfile>')
     sys.exit(2)
@@ -18,11 +18,11 @@ for opt, arg in opts:
     if opt == '-h':
         print ('app.py -a <audiofile> -i <imagefile> -o <outputfile>')
         sys.exit()
-    elif opt in ("-a", "--afile"):
+    elif opt in ("-a", "--audiofile"):
         audiofile = arg
-    elif opt in ("-i", "--ifile"):
+    elif opt in ("-i", "--imagefile"):
         imagefile = arg
-    elif opt in ("-o", "--ofile"):
+    elif opt in ("-o", "--ouputfile"):
         outputfile = arg
 
 with contextlib.closing(wave.open(audiofile, 'r')) as f:
