@@ -19,7 +19,7 @@ Now: import imageio and then imageio.plugins.ffmpeg.download()
 python app.py -a example.wav -i example.jpg -o output.avi
 ```
 You run the script and give -a for Audio file -i for Image file and -o for Output file
-## you can also use long long-style option names like --audiofile --imagefile --ouputfile
+##### you can also use long long-style option names like --audiofile --imagefile --ouputfile
 
 
 #Audio files tested:
