@@ -21,9 +21,9 @@ app.py -a example.wav -i example.jpg -o output.avi
 You run the script and give -a for Audio file -i for Image file and -o for Output file
 
 
-Audio files tested:
+#Audio files tested:
     *.mp3 
     *.wav
-Image files tested:
+#Image files tested:
     *.jpg, jpeg
 Output file should be ending on *.avi or you might need to add some codec
