@@ -16,7 +16,7 @@ Now: import imageio and then imageio.plugins.ffmpeg.download()
 ```
 
 ```
-app.py -a example.wav -i example.jpg -o output.avi
+python app.py -a example.wav -i example.jpg -o output.avi
 ```
 You run the script and give -a for Audio file -i for Image file and -o for Output file
 
